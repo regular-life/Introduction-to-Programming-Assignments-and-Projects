@@ -1,0 +1,29 @@
+Advantages of using OO
+1. Makes the code more organised.
+2. Allows for code reuse in another file.
+
+Advantages of using Dictionaries
+1. Easy to search items in dictionary.
+2. Easy to edit and make data.
+
+Disadvantage of using OO
+1. Codes using OO are complex and mistakes are likely to be made in making codes.
+2. Complex to understand, and may not be easy to extract data. 
+
+Disadvantage of using dictionaries
+1. Consumes lot of memory 
+2. Tough to store complex data.
+
+Performance comparison for grading operation (give in each line: value of N; time taken by two
+approaches in seconds, and which is faster and by how much).
+1. N: 1000
+2. Time by OO: 3.88094949722290004
+3. Time by dictionary: 0.00199151039312353516
+4. X is faster; fraction of time x took is: 5.26 x 10^-4
+
+Performance comparison for search operation (give in each line: value of N; time taken by two
+approaches in seconds, and which is faster and by how much).
+1. N:
+2. Time by OO: 1.3735485076904297
+3. Time by dictionary: 0.0009615421295166016
+4. X is faster; fraction of time x took is: 7.2 * 10^-4

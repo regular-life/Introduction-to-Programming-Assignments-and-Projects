@@ -1,0 +1,4 @@
+File1.txt
+score : 8.109433962264152 
+most frequently occuring words in descending order are : to, and, ai, the, of
+randomly selected words : processing, various, signs, provide, surveillance
