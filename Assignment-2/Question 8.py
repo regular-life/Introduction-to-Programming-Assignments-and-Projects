@@ -1,5 +1,5 @@
 n=int(input())
-f=open('IP Assignment 2\Pages.txt','r')
+f=open('Pages.txt','r')
 f.seek(0,0)
 d={}
 init=[]

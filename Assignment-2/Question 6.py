@@ -1,7 +1,7 @@
 wts = [(10, 5), (10, 5), (100, 15), (40, 10), (100,15), (10,5), (80,20), (100,25)]
-f=open("IP Assignment 2\IPMarks.txt","r")
+f=open("IPMarks.txt","r")
 f.seek(0,0)
-z=open("IP Assignment 2\IPGrades.txt", "w")
+z=open("IPGrades.txt", "w")
 z.seek(0,0)
 t=f.readlines()
 for i in t:

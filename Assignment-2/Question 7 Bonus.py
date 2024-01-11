@@ -1,6 +1,9 @@
-f=open('IP Assignment 2\Addrbook.txt','r')
+f=open('Addrbook.txt','r')
 f.seek(0,0)
 t=f.readlines()
+f2=open('Addrbook 2.txt','r')
+f2.seek(0,0)
+t2=f2.readlines()
 d={}
 name=[]
 phone=[]
@@ -15,14 +18,23 @@ for i in range(len(t)):
     if (i+1)%4==1:
         name.append(t[i][0:len(t[i])-2])
     elif (i+1)%4==2:
+        phone.append(t[i][13:len(t[i])-1])
+    elif (i+1)%4==3:
+        address.append(t[i][8:len(t[i])-1])
+    elif (i+1)%4==0:
+        mail.append(t[i][14:len(t[i])-1])
+for i in range(len(t2)):
+    if (i+1)%4==1:
+        name.append(t2[i][0:len(t2[i])-2])
+    elif (i+1)%4==2:
         p=t[i].index(',')
-        phone.append(t[i][p+1:len(t[i])-1])
+        phone.append(t2[i][p+1:len(t2[i])-1])
     elif (i+1)%4==3:
         p=t[i].index(',')
-        address.append(t[i][p+1:len(t[i])-1])
+        address.append(t2[i][p+1:len(t2[i])-1])
     elif (i+1)%4==0:
         p=t[i].index(',')
-        mail.append(t[i][p+1:len(t[i])-1])
+        mail.append(t2[i][p+1:len(t2[i])-1])
 for i in range(len(name)):
     d[name[i]]=[{'phone no':phone[i], 'address':address[i], 'email':mail[i]}]
 print("Enter 1 if you want to insert a new entry")

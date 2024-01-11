@@ -1,4 +1,4 @@
-f=open("IP Assignment 2\Q3.txt","r")
+f=open("Q3.txt","r")
 f.seek(0,0)
 t=f.readlines()
 n=int(len(t)**0.5)
